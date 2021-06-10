@@ -55,7 +55,8 @@ $livre_a_lire = $reponse->fetch_all(MYSQLI_ASSOC);
         <p>Numéro International normalisé (ISBN): <?php echo $element['isbn']?></p><br/>
         <p>Ecrit par: <?php echo $element['auteur_id']?></p><br/>
         <p>Publiée le: <?php echo $element['date_de_publication']?></p><br/>
-        <p>Quantité disponible: <?php echo $element['stock']?></p><br/><br/>
+        <p>Quantité disponible: <?php echo $element['stock']?></p><br/>
+        <a href="delete.php?id=<?php echo $element['id']; ?>">Supprimer</a><br/>
     <?php } ?>
 </body>
 
